@@ -1,0 +1,4 @@
+Bundle-Name: integration
+Bundle-SymbolicName: com.smanager.andre
+Bundle-Version: 1.0.0
+Liferay-Configuration-Path: /configuration

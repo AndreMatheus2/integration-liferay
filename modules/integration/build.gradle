@@ -1,0 +1,36 @@
+plugins {
+  id 'java'
+  id 'org.springframework.boot' version '2.7.10'
+  id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.smanager.andre'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+bootJar {
+  enabled = false
+}
+
+jar {
+  enabled = true
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
+  compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+  compileOnly group: "org.osgi", name: "org.osgi.service.jaxrs"
+  compileOnly 'org.projectlombok:lombok'
+  annotationProcessor 'org.projectlombok:lombok'
+  implementation 'com.google.code.gson:gson:2.8.8'
+  implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+}
+
+tasks.named('test') {
+  useJUnitPlatform()
+}
