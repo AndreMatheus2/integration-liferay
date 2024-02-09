@@ -1,4 +1,4 @@
-package com.smanager.andre.application;
+package com.arao.andre.application;
 
 
 import java.net.URI;
@@ -9,9 +9,9 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.Application;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.smanager.andre.application.dto.FollowerDto;
-import com.smanager.andre.application.dto.PostDto;
-import com.smanager.andre.application.dto.UserDto;
+import com.arao.andre.application.dto.FollowerDto;
+import com.arao.andre.application.dto.PostDto;
+import com.arao.andre.application.dto.UserDto;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPut;
 import org.osgi.service.component.annotations.Component;

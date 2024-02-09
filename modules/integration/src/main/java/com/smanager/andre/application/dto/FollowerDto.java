@@ -1,4 +1,4 @@
-package com.smanager.andre.application.dto;
+package com.arao.andre.application.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
