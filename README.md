@@ -1,13 +1,12 @@
 # Liferay Integration
 
-As tecnologias usadas foram: Liferay 7.4.13 , Springboot, Blade, Gradle e Postgres.
+As tecnologias usadas foram: Liferay DXP 7.4.13 , Springboot, Blade, Gradle e Postgres.
 
 ## Pré-requisitos
 
-Para uso dessa aplicação é necessario que o ambiente onde ela for ser executada tenha instalado Liferay, Java 8, Gradle e Postgres.
+Para uso dessa aplicação é necessario que o ambiente onde ela for ser executada tenha instalado Liferay (Pasta bundles que já existe no projeto), Java 8, Gradle, Blade e Postgres.
 
-A aplicação depende de outra aplicação em Quarkus para funcionar, baixe ela no GitHub e execute em sua máquina seguindo o passo a passo no arquivo README.md https://github.com/andre-arao/social-quarkus 
-(API Quarkus) port=8084, username=postgres e password=postgres no Postgres.
+A aplicação depende de uma API para funcionar, baixe a API no GitHub e execute em sua máquina seguindo o passo a passo no arquivo README.md https://github.com/andre-arao/social-quarkus ela roda na porta 8084 e precisa do Postgres como banco de dados.
 
 ## Instruções de subida da aplicação
 
