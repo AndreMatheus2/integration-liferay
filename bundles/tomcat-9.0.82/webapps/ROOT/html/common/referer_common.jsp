@@ -39,7 +39,7 @@ else {
 	referer = PortalUtil.getPathMain();
 }
 
-if ((httpSession != null) && !CookiearaoUtil.hasSessionId(request) && Validator.isNotNull(referer)) {
+if ((httpSession != null) && !CookiesManagerUtil.hasSessionId(request) && Validator.isNotNull(referer)) {
 	referer = PortalUtil.getURLWithSessionId(referer, httpSession.getId());
 }
 %>

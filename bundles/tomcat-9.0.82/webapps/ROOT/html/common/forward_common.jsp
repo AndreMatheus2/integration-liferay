@@ -30,7 +30,7 @@ else {
 	forwardURL = PortalUtil.getPathMain();
 }
 
-if (!CookiearaoUtil.hasSessionId(request) && Validator.isNotNull(forwardURL)) {
+if (!CookiesManagerUtil.hasSessionId(request) && Validator.isNotNull(forwardURL)) {
 	forwardURL = PortalUtil.getURLWithSessionId(forwardURL, session.getId());
 }
 %>

@@ -21,7 +21,7 @@ import com.liferay.petra.string.StringPool;
 import com.liferay.portal.kernel.bean.BeanParamUtil;
 import com.liferay.portal.kernel.bean.BeanPropertiesUtil;
 import com.liferay.portal.kernel.configuration.Filter;
-import com.liferay.portal.kernel.cookies.CookiearaoUtil;
+import com.liferay.portal.kernel.cookies.CookiesManagerUtil;
 import com.liferay.portal.kernel.dao.search.DisplayTerms;
 import com.liferay.portal.kernel.dao.search.ResultRowSplitter;
 import com.liferay.portal.kernel.dao.search.RowChecker;
@@ -262,7 +262,7 @@ public final class forward_005fjsp_jsp extends org.apache.jasper.runtime.HttpJsp
     _jspx_imports_classes.add("com.liferay.portal.kernel.servlet.SessionErrors");
     _jspx_imports_classes.add("com.liferay.portlet.RenderParametersPool");
     _jspx_imports_classes.add("javax.portlet.MutableRenderParameters");
-    _jspx_imports_classes.add("com.liferay.portal.kernel.cookies.CookiearaoUtil");
+    _jspx_imports_classes.add("com.liferay.portal.kernel.cookies.CookiesManagerUtil");
     _jspx_imports_classes.add("com.liferay.portal.kernel.portletdisplaytemplate.PortletDisplayTemplateManagerUtil");
     _jspx_imports_classes.add("javax.portlet.PortletPreferences");
     _jspx_imports_classes.add("com.liferay.layout.seo.kernel.LayoutSEOLinkManager");
@@ -518,7 +518,7 @@ else {
 	forwardURL = PortalUtil.getPathMain();
 }
 
-if (!CookiearaoUtil.hasSessionId(request) && Validator.isNotNull(forwardURL)) {
+if (!CookiesManagerUtil.hasSessionId(request) && Validator.isNotNull(forwardURL)) {
 	forwardURL = PortalUtil.getURLWithSessionId(forwardURL, session.getId());
 }
 
